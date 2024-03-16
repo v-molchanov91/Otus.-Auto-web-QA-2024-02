@@ -2,10 +2,11 @@ import math
 from abc import ABC, abstractmethod
 import Figure
 
-class Circle(Figure)
 
-    def __init__(self, radius):
-        super().__init__(name = "Circle")
+class Circle(Figure):
+
+    def __init__(self, radius, name):
+        super().__init__(name="Circle")
         if radius < 0:
             ValueError("You can't build a Circle")
             self.radius = radius
