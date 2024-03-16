@@ -5,7 +5,6 @@ class Figure(ABC):
     def __init__(self, name):
         self.name = name
 
-
     @abstractmethod
     def get_area(self):
         pass
@@ -13,7 +12,6 @@ class Figure(ABC):
     @abstractmethod
     def get_perimetr(self):
         pass
-
 
     def get_add_area(self, other_figure):
         if not isinstance(other_figure, Figure):

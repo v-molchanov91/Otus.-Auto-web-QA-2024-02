@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 import Figure
 
 
-class Triangle(Figure):
+class Triangle1(Figure):
     def __init__(self, side_a, side_b, side_c, name):
-        super().__init__(name="Triangle")
+        super().__init__(name="Triangle1")
         if side_a <= 0 or side_b <= 0 or side_c <= 0:
             raise ValueError("нельзя создать треугольник")
         self.side_a = side_a

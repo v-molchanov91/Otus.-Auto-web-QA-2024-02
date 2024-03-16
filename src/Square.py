@@ -2,10 +2,10 @@ from abc import ABC, abstractmethod
 import Figure
 
 
-class Square(Figure):
+class Square1(Figure):
 
     def __init__(self, side_a, name):
-        super().__init__(name="Square")
+        super().__init__(name="Square1")
         if side_a < 0:
             raise ValueError("You can't build a Square")
         self.side_a = side_a
