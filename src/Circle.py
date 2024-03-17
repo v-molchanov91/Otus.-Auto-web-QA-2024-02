@@ -1,5 +1,5 @@
 import math
-from src import Figure
+from src.Figure import Figure
 
 
 class Circle(Figure):
