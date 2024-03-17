@@ -1,10 +1,4 @@
-from abc import ABC, abstractmethod
-import Figure
-
-
-class Figure:
-    def __init__(self, name):
-        self.name = name
+from src import Figure
 
 
 class Rectangle(Figure):
@@ -20,8 +14,3 @@ class Rectangle(Figure):
 
     def get_perimetr(self):
         return 2 * (self.side_a + self.side_b)
-
-
-
-
-

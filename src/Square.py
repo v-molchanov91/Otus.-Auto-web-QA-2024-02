@@ -1,11 +1,4 @@
-from abc import ABC, abstractmethod
-import Figure
-
-
-
-class Figure:
-    def __init__(self, name):
-        self.name = name
+from src import Figure
 
 
 class Square(Figure):
@@ -21,5 +14,3 @@ class Square(Figure):
 
     def get_perimetr(self):
         return self.side_a * 4
-
-

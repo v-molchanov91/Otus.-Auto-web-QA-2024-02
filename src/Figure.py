@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-'''abs'''
+
 
 class Figure(ABC):
     def __init__(self, name):

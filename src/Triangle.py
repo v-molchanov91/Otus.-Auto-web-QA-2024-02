@@ -1,15 +1,9 @@
-from abc import ABC, abstractmethod
-import Figure
-
-
-class Figure:
-    def __init__(self, name):
-        self.name = name
+from src import Figure
 
 
 class Triangle(Figure):
     def __init__(self, side_a, side_b, side_c, name):
-        super().__init__(name="Triangle1")
+        super().__init__(name="Triangle")
         if side_a <= 0 or side_b <= 0 or side_c <= 0:
             raise ValueError("нельзя создать треугольник")
         self.side_a = side_a
@@ -21,6 +15,3 @@ class Triangle(Figure):
 
     def get_perimetr(self):
         return self.side_a + self.side_b + self.side_c
-
-
-
