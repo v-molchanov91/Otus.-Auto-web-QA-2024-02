@@ -1,6 +1,5 @@
 import math
-from abc import ABC, abstractmethod
-import Figure
+from src.Figure import Figure
 
 
 class Circle(Figure):
@@ -9,11 +8,11 @@ class Circle(Figure):
         super().__init__(name="Circle")
         if radius < 0:
             ValueError("You can't build a Circle")
-            self.radius = radius
-
+        self.radius = radius
 
     def get_area(self):
         return math.pi * self.radius ** 2
 
     def get_perimetr(self):
         return 2 * math.pi * self.radius
+
