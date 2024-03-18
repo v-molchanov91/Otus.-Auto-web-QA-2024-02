@@ -6,6 +6,8 @@ class Triangle(Figure):
         super().__init__(name="Triangle")
         if side_a <= 0 or side_b <= 0 or side_c <= 0:
             raise ValueError("нельзя создать треугольник")
+        elif side_a + side_b < side_c and side_b + side_c < side_a and side_a + side_b < side_b:
+            raise ValueError("фигура не является треугольником")
         self.side_a = side_a
         self.side_b = side_b
         self.side_c = side_c
