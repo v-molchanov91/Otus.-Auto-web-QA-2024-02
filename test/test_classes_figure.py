@@ -31,7 +31,7 @@ def test_perimetr_rectangle(data):
     ("side_a", "area"),
     [(4, 16), (2.5, 6.25)])
 def test_area_square(side_a, area):
-    a = Square(side_a, area)
+    a = Square(side_a, name="Square")
     assert a.get_area() == area, f'area should be {2 ** side_a}'
 
 
