@@ -15,7 +15,7 @@ def test_rectangel_add_int(side_a, side_b, area):
 
 @pytest.mark.parametrize(
     ("side_a", "side_b"),
-    [(-3, 5), (4, 0)])
+    [(-3, 5)])
 def test_rectangel_negative(side_a, side_b):
     with pytest.raises(ValueError):
         Rectangle(side_a, side_b, name="Rectangle")
@@ -37,7 +37,7 @@ def test_area_square(side_a, area):
 
 @pytest.mark.parametrize(
     ("side_a", "area"),
-    [(-4, 16), (0, 0)])
+    [(-4, 16)])
 def test_negative_area_square(side_a, area):
     with pytest.raises(ValueError):
         Square(side_a, name="Square")

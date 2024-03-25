@@ -18,7 +18,7 @@ def square_p(request):
 
     yield side_a, perimetr
 
-    side_a, perimetr = square_p(request)
+    side_a, perimetr = 4, 16
 
 
 @pytest.fixture
