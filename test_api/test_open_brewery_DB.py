@@ -23,7 +23,7 @@ def test_get_single_brewery():
     response = requests.get(f"{base_url}/{brewery_id}")
     assert response.status_code == 200
     assert response.json()["id"] == brewery_id
-
+    assert response.joson()["country"] == "Lost Angeles"
 
 def test_search_breweries():
     query = "dog"
